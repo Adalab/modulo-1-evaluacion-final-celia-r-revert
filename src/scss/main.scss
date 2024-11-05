@@ -7,7 +7,7 @@
 .header {
     background-image: url(../images/cover.jpeg);
     background-size: cover;
-    height: 150vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     flex-direction: column; 
@@ -17,6 +17,13 @@
     color: white;
 }
 
+.menu-hamburguesa {
+  background-color: #0271bc;
+  position: fixed;
+  top: 0px;
+  right: 135px;
+}
+
 .titulo-cabecera {
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -24,7 +31,7 @@
   font-size: 20pt;
   text-align: center;
   position: relative;
-  top: 60px;
+  top: 50px;
 }
 
 .text-1 {
@@ -35,7 +42,7 @@
     text-align: center;
     font-size: 7pt;
     position: relative;
-    top: 70px;
+    top: 65px;
   }
 
 .contenedor-boton {
@@ -96,7 +103,7 @@
 
 .boton-go {
   margin-left: 5px;
-  border-radius: 50%;
+  border-radius: 12.5px;
   width: 45px;
   height: 25px;
   border: solid 1px #f26002;
@@ -109,11 +116,52 @@
 }
 
 .section-purchase {
-  margin-top: 15%;
+  margin-top: 10px;
+  padding-top: 10%;
+  padding-bottom: 15%;
   display: grid;
-
+  grid-template-rows: repeat(8, 1fr);
   background-color: rgba($color: #8ccbea, $alpha: 0.2)
 }
+
+.grid-title-main {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.grid-title {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8pt;
+  text-align: center;
+}
+
+.text-contenedor {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9pt;
+  text-align: center;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;;
+  bottom: 12px;
+}
+
+.grid-boton {
+  background-color: #f26002;
+  color: white;
+  border: none;
+  width: 100px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .footer {
   padding: 20px;
@@ -123,8 +171,53 @@
   font-weight: 300;
   font-style: normal;
   font-size: 8pt;
+}
+
+.flecha-arriba {
+  width: 15px;
+  margin-top: 5px;
+}
+.boton-footer {
+ position: relative;
+ bottom: 30px;
+ left: 40px;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ color: white;
+ border: none;
+}
+
+.footer-text-container-1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.footer-text-container-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  line-height: 1.5;
+}
+
+.year {
   text-align: center;
 }
+
+.components {
+  text-align: center;
+}
+
+
+
+
 
 
 
