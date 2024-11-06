@@ -13,7 +13,7 @@
     <link rel="icon" href="./images/favicon.png" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="cabecera">
       <nav class="menu-hamburguesa">
        <a href="https://adalab.es/" target="blank">
         <img src="./images/list.svg" alt="menu-hamburguesa">
@@ -29,11 +29,13 @@
       </div>
       <div class="contenedor-boton">
         <button class="flecha-abajo">
-          <img class="imagen-cabecera" src="./images/ico-scroll-down.svg" alt="icono de una flecha naranja">
+          <a href="#grid">
+            <img class="imagen-cabecera" src="./images/ico-scroll-down.svg" alt="icono de una flecha naranja">
+          </a>
         </button>
       </div>
     </header>
-    <main class="contenedor-seccion">
+    <main class="contenedor-seccion" id="main">
      <p class="tips-insomnio">
       Insomnia tips
      </p>
@@ -49,49 +51,75 @@
       </p>
      </button>
     </main>
-    <section class="section-purchase">
+    <section class="section-purchase" id="grid">
         <h2 class="grid-title-main">
           3 reasons to purchase
         </h2>
-        <h3 class="grid-title">
-          ut sed metus
-        </h3>
-        <p class="text-contenedor">
-          Lorem ipsum dolor sit amet consectetur
-        </p>
+        <article>
+          <h3 class="grid-title">
+            ut sed metus
+          </h3>
+          <p class="text-contenedor">
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </article>
+        <article>
         <h3 class="grid-title">
           curabitur ac erat
         </h3>
         <p class="text-contenedor">
         Mauris mattis urna quis lorem molestie
         </p>
+      </article>
+      <article>
         <h3 class="grid-title">
           Morbi dictum
         </h3>
         <p class="text-contenedor">
           Aliquam in dolor et dolor tincidunt
         </p>
+      </article>
         <button class="grid-boton">
           More reasons
         </button>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <button class="boton-footer">
-        <img class="flecha-arriba" src="./images/ico-arrow.svg" alt="">
+        <a href="#cabecera">
+          <img class="flecha-arriba" src="./images/ico-arrow.svg" alt="">
+        </a>
       </button>
       <div class="footer-text-container-1">
-        <p class="item">ARTICLES</p>
-        <p class="item">BOOKS</p>
-        <p class="item">EVENTS</p>
-        <p class="item">REASONS</p>
-        <p class="item">TIPS</p>  
+        <a class="enlace"  href="https://adalab.es/">
+          <p class="item">ARTICLES</p>
+        </a>
+        <a class="enlace" href="https://adalab.es/">
+          <p class="item">BOOKS</p>
+        </a>
+        <a class="enlace" href="https://adalab.es/">
+          <p class="item">EVENTS</p>
+        </a>
+        <a class="enlace" href="https://adalab.es/">
+          <p class="item">REASONS</p>
+        </a>
+        <a class="enlace" href="https://adalab.es/">
+          <p class="item">TIPS</p>
+        </a>
       </div>
+
       <div class="footer-text-container-2">
-       <p class="item">TWITTER</p>
-       <p class="item">INSTAGRAM</p>
-       <p class="item">MASTODON.SOCIAL</p>
+      <a class="enlace" href="https://adalab.es/">
+        <p class="item">TWITTER</p>
+      </a> 
+      <a class="enlace" href="https://adalab.es/">
+        <p class="item">INSTAGRAM</p>
+      </a>
+      <a class="enlace" href="https://adalab.es/">
+        <p class="item">MASTODON.SOCIAL</p>
+      </a>
+       
       </div>
-     <p class="year">2022</p>
+     <p class="year">© 2022</p>
      <p class="components">we 🧡 components</p>
     </footer>
   </body>
